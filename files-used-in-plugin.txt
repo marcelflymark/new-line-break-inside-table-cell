@@ -1,7 +1,6 @@
 esbuild.config.mjs
 main.js
 manifest.json
-node_modules
 obsidian_plugin.ts
 package.json
 package-lock.json
