@@ -1,0 +1,11 @@
+{
+	"id": "new-line-break-inside-table-cell",
+	"name": "New Line Break Inside Table Cell",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Insert a new line break inside a table cell",
+	"author": "marcelflymark",
+	"authorUrl": "https://github.com/marcelflymark",
+	"fundingUrl": "https://buymeacoffee.com/marcelflymark",
+	"isDesktopOnly": false
+}
