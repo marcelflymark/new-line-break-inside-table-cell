@@ -1,21 +1,9 @@
-# Dependencies
 node_modules/
-
-# Build output
 main.js
 *.js.map
-
-# Development
 .DS_Store
 Thumbs.db
-buildum.sh
 files-used-in-plugin.txt
-
-# IDE
-.vscode/
-.idea/
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+buildum.sh
+install-missing-modules.sh
+runall.sh
