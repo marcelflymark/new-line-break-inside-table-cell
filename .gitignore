@@ -8,6 +8,8 @@ main.js
 # Development
 .DS_Store
 Thumbs.db
+buildum.sh
+files-used-in-plugin.txt
 
 # IDE
 .vscode/
