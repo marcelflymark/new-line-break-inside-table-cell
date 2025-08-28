@@ -7,3 +7,4 @@ files-used-in-plugin.txt
 buildum.sh
 install-missing-modules.sh
 runall.sh
+settokenauth.sh
