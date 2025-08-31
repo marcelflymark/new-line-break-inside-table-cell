@@ -1,9 +1,9 @@
 {
 	"id": "new-line-within-table-cell",
-	"name": "New Line Within Table Cell",
+	"name": "Insert a New Line Within a Table Cell",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "New Line with a Table Cell",
+	"description": "Insert a New Line Within a Table Cell",
 	"author": "marcelflymark",
 	"authorUrl": "https://github.com/marcelflymark",
 	"fundingUrl": "https://buymeacoffee.com/marcelflymark",

@@ -5,3 +5,8 @@ obsidian_plugin.ts
 package.json
 package-lock.json
 tsconfig.json
+README.md
+LICENSE
+community-plugins-entry.txt
+icon-enter-key.png
+data.json
