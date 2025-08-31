@@ -4,7 +4,7 @@ main.js
 .DS_Store
 Thumbs.db
 files-used-in-plugin.txt
-buildum.sh
-install-missing-modules.sh
+install-missing-node_modules.sh
 runall.sh
 settokenauth.sh
+obsidian_manifest.json

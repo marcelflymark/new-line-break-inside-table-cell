@@ -3,11 +3,11 @@ import { App, Editor, MarkdownView, Modal, Notice, Plugin, PluginSettingTab, Set
 // Remember to rename these classes and interfaces!
 
 interface MyPluginSettings {
-	// Settings interface kept for future extensibility
+	showRibbonIcon: boolean;
 }
 
 const DEFAULT_SETTINGS: MyPluginSettings = {
-	// No settings needed for now
+	showRibbonIcon: true
 }
 
 export default class MyPlugin extends Plugin {
@@ -16,12 +16,14 @@ export default class MyPlugin extends Plugin {
 	async onload() {
 		await this.loadSettings();
 
-		// This creates an icon in the left ribbon that adds text to the current note
-		const ribbonIconEl = this.addRibbonIcon('corner-down-left', 'Insert inline line break (<br>)', (evt: MouseEvent) => {
-			this.addTextToCurrentNote();
-		});
-		// Perform additional things with the ribbon
-		ribbonIconEl.addClass('my-plugin-ribbon-class');
+		// Conditionally create ribbon icon based on settings
+		if (this.settings.showRibbonIcon) {
+			const ribbonIconEl = this.addRibbonIcon('corner-down-left', 'New line within table cell', (evt: MouseEvent) => {
+				this.addTextToCurrentNote();
+			});
+			// Perform additional things with the ribbon
+			ribbonIconEl.addClass('my-plugin-ribbon-class');
+		}
 
 		// Command to add text to the current note
 		this.addCommand({
@@ -119,6 +121,24 @@ class SampleSettingTab extends PluginSettingTab {
 
 		containerEl.empty();
 
-		containerEl.createEl('p', {text: 'This plugin inserts <br> tags for line breaks in table cells. No configuration needed!'});
+		containerEl.createEl('h2', {text: 'New Line Break Inside Table Cell Settings'});
+
+		new Setting(containerEl)
+			.setName('Show ribbon icon')
+			.setDesc('Display the Enter key (↵) icon in the left sidebar ribbon')
+			.addToggle(toggle => toggle
+				.setValue(this.plugin.settings.showRibbonIcon)
+				.onChange(async (value) => {
+					this.plugin.settings.showRibbonIcon = value;
+					await this.plugin.saveSettings();
+					
+					// Show notice that restart is needed
+					new Notice('Please restart Obsidian or reload the plugin for the ribbon icon change to take effect.');
+				}));
+
+		containerEl.createEl('p', {
+			text: 'This plugin inserts <br> tags for line breaks in table cells. Use the ribbon icon (if enabled) or the "New Line" command (Ctrl+P).',
+			cls: 'setting-item-description'
+		});
 	}
 }
