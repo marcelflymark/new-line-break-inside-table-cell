@@ -1,0 +1,8 @@
+,
+{
+  "id": "new-line-break-inside-table-cell",
+  "name": "New Line Within Table Cell",
+  "author": "marcelflymark",
+  "description": "New Line Inserted Within A Table Cell.",
+  "repo": "marcelflymark/new-line-break-inside-table-cell"
+}
