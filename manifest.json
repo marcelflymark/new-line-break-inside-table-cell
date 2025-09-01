@@ -1,7 +1,7 @@
 {
 	"id": "new-line-within-table-cell",
 	"name": "Insert a New Line Within a Table Cell",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"minAppVersion": "0.15.0",
 	"description": "Insert a New Line Within a Table Cell",
 	"author": "marcelflymark",
