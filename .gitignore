@@ -8,3 +8,4 @@ install-missing-node_modules.sh
 runall.sh
 settokenauth.sh
 obsidian_manifest.json
+obsidian_plugin.ts

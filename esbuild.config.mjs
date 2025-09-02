@@ -1,7 +1,7 @@
 import esbuild from "esbuild";
 
 esbuild.build({
-  entryPoints: ["obsidian_plugin.ts"],
+  entryPoints: ["insert_newline_plugin.ts"],
   bundle: true,
   external: ["obsidian"],
   format: "cjs",

@@ -1,7 +1,7 @@
 esbuild.config.mjs
 main.js
 manifest.json
-obsidian_plugin.ts
+insert_newline_plugin.ts
 package.json
 package-lock.json
 tsconfig.json
