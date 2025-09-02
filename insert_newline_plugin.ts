@@ -75,6 +75,9 @@ export default class InsertNewlinePlugin extends Plugin {
 			line: cursor.line,
 			ch: cursor.ch + textToInsert.length
 		});
+		
+		// Keep keyboard visible on mobile devices (Android)
+		editor.focus();
 	}
 
 	async loadSettings() {
@@ -119,3 +122,4 @@ class InsertNewlineSettingTab extends PluginSettingTab {
 		});
 	}
 }
+
