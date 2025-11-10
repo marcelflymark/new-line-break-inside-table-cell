@@ -19,7 +19,7 @@ export default class InsertNewlinePlugin extends Plugin {
 
 		// Conditionally add the ribbon entry based on settings
 		if (this.settings.showNewlineRibbonIcon) {
-			const ribbonEntryEl = this.addRibbonIcon('corner-down-left', 'New line within table cell', (evt: MouseEvent) => {
+			this.addRibbonIcon('corner-down-left', 'New line within table cell', (evt: MouseEvent) => {
 				this.insertNewlineInCurrentNote();
 			});
 		}
@@ -27,7 +27,7 @@ export default class InsertNewlinePlugin extends Plugin {
 		// Command to insert one newline to the current note
 		this.addCommand({
 			id: 'insert-nl-at-cursor',
-			name: 'New Line',
+			name: 'New line',
 			icon: 'corner-down-left',
 			editorCallback: (editor: Editor, view: MarkdownView) => {
 				this.insertNewlineAtCursor(editor);
@@ -102,11 +102,13 @@ class InsertNewlineSettingTab extends PluginSettingTab {
 
 		containerEl.empty();
 
-		containerEl.createEl('h2', {text: 'New Line Within Table Cell Settings'});
+		new Setting(containerEl)
+			.setName('New line within table cell settings')
+			.setHeading();
 
 		new Setting(containerEl)
 			.setName('Show ribbon icon')
-			.setDesc('Display the Enter key (↵) entry in the ribbon')
+			.setDesc('Display the enter key (↵) entry in the ribbon')
 			.addToggle(toggle => toggle
 				.setValue(this.plugin.settings.showNewlineRibbonIcon)
 				.onChange(async (value) => {
@@ -116,10 +118,8 @@ class InsertNewlineSettingTab extends PluginSettingTab {
 					new Notice('Please restart Obsidian or reload the plugin for the ribbon entry change to take effect.');
 				}));
 
-		containerEl.createEl('p', {
-			text: 'This plugin inserts one <br> tag for a new line within table cells. Use the ribbon icon (if enabled) or the "New Line" command (Ctrl+P).',
-			cls: 'setting-item-description'
-		});
+		new Setting(containerEl)
+			.setName('About')
+			.setDesc('This plugin inserts one <br> tag for a new line within table cells. Use the ribbon icon (if enabled) or the "New line" command (Ctrl+P).');
 	}
 }
-
