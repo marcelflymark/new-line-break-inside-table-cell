@@ -103,7 +103,7 @@ class InsertNewlineSettingTab extends PluginSettingTab {
 		containerEl.empty();
 
 		new Setting(containerEl)
-			.setName('New line within table cell settings')
+			.setName('New Line within Table Cell')
 			.setHeading();
 
 		new Setting(containerEl)
