@@ -86,7 +86,7 @@ var InsertNewlineSettingTab = class extends import_obsidian.PluginSettingTab {
   display() {
     const { containerEl } = this;
     containerEl.empty();
-    new import_obsidian.Setting(containerEl).setName("New line within table cell settings").setHeading();
+    new import_obsidian.Setting(containerEl).setName("New Line within Table Cell").setHeading();
     new import_obsidian.Setting(containerEl).setName("Show ribbon icon").setDesc("Display the enter key (\u21B5) entry in the ribbon").addToggle((toggle) => toggle.setValue(this.plugin.settings.showNewlineRibbonIcon).onChange(async (value) => {
       this.plugin.settings.showNewlineRibbonIcon = value;
       await this.plugin.saveSettings();
