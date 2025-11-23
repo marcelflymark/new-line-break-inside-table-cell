@@ -5,7 +5,9 @@ main.js
 Thumbs.db
 files-used-in-plugin.txt
 install-missing-node_modules.sh
+main.js
 runall.sh
 settokenauth.sh
 obsidian_manifest.json
 obsidian_plugin.ts
+data.json

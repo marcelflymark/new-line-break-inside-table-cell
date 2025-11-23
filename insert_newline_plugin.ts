@@ -103,10 +103,6 @@ class InsertNewlineSettingTab extends PluginSettingTab {
 		containerEl.empty();
 
 		new Setting(containerEl)
-			.setName('New line within table cell')
-			.setHeading();
-
-		new Setting(containerEl)
 			.setName('Show ribbon icon')
 			.setDesc('Display the enter key (↵) entry in the ribbon')
 			.addToggle(toggle => toggle
