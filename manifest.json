@@ -3,7 +3,7 @@
 	"name": "Insert a New Line Within a Table Cell on Mobile devices",
 	"version": "1.0.1",
 	"minAppVersion": "0.15.0",
-	"description": "Insert a new line within a table cell on Mobile devices.",
+	"description": "Insert a new line within a table cell on mobile devices.",
 	"author": "marcelflymark",
 	"authorUrl": "https://github.com/marcelflymark",
 	"isDesktopOnly": false
