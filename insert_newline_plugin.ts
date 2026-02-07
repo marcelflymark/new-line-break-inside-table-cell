@@ -116,6 +116,6 @@ class InsertNewlineSettingTab extends PluginSettingTab {
 
 		new Setting(containerEl)
 			.setName('About')
-			.setDesc('This plugin inserts one <br> tag for a new line within table cells. Use the ribbon icon (if enabled) or the "New line" command (Ctrl+P).');
+			.setDesc('Insert, on mobile devices, a new line within table cells. Use the ribbon icon (if enabled) or the "New line" command (Ctrl+P).');
 	}
 }
