@@ -1,9 +1,0 @@
-esbuild.config.mjs
-manifest.json
-insert_newline_plugin.ts
-package.json
-package-lock.json
-tsconfig.json
-README.md
-LICENSE
-icon-enter-key.png
