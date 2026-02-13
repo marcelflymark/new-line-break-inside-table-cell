@@ -1,7 +1,7 @@
 {
-  "name": "new-line-within-table-cell",
+  "name": "table-line-break",
   "version": "1.0.1",
-  "description": "Command for mobile devives: insert a break inside a table cell. This command can be used in a shortcut or toolbar.",
+  "description": "Command for mobile devives: table line break. This command can be used in a shortcut or toolbar.",
   "main": "main.js",
   "scripts": {
     "dev": "node esbuild.config.mjs",
