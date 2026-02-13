@@ -14,7 +14,7 @@ However, on mobile devices it is not possible to type the key combination SHIFT+
 - Run the command from the Command Palette: **Line Break Inside Table Cell: Line break**
 - Add this command to the toolbar where it will appear as an enter-key (![[images/icon-enter-key.png]]). Search for **line break** in the Command Palette during configuring the toolbar.
 
-**Using the command to insert a break on mobile devices**
+**New Command**
 
 A new Obsidian command is added to the Command Palette. This command will insert a break inside a table cell using the HTML line break element <br\>. A new line will be started inside the same table cell without using a hardware keyboard.
 
