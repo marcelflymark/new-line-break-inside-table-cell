@@ -1,4 +1,5 @@
 node_modules/
+buildum.sh
 main.js
 *.js.map
 .DS_Store
@@ -11,3 +12,4 @@ settokenauth.sh
 obsidian_manifest.json
 obsidian_plugin.ts
 data.json
+files-containing-id.txt

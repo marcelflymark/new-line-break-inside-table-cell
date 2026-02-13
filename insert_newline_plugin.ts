@@ -1,7 +1,7 @@
 import { App, Editor, MarkdownView, Notice, Plugin, PluginSettingTab, Setting } from 'obsidian';
 
 // Plugin that adds 1 command and 1 optional ribbon entry.
-// It inserts an HTML newline at the cursor within table cells
+// It inserts an HTML break at the cursor inside table cells
 
 interface InsertNewlinePluginSettings {
 	showNewlineRibbonIcon: boolean;
@@ -19,7 +19,7 @@ export default class InsertNewlinePlugin extends Plugin {
 
 		// Conditionally add the ribbon entry based on settings
 		if (this.settings.showNewlineRibbonIcon) {
-			this.addRibbonIcon('corner-down-left', 'New line within table cell', (evt: MouseEvent) => {
+			this.addRibbonIcon('corner-down-left', 'Break inside table cell', (evt: MouseEvent) => {
 				this.insertNewlineInCurrentNote();
 			});
 		}
@@ -27,7 +27,7 @@ export default class InsertNewlinePlugin extends Plugin {
 		// Command to insert one newline to the current note
 		this.addCommand({
 			id: 'insert-nl-at-cursor',
-			name: 'New line',
+			name: 'Line break',
 			icon: 'corner-down-left',
 			editorCallback: (editor: Editor, view: MarkdownView) => {
 				this.insertNewlineAtCursor(editor);
@@ -116,6 +116,6 @@ class InsertNewlineSettingTab extends PluginSettingTab {
 
 		new Setting(containerEl)
 			.setName('About')
-			.setDesc('Insert, on mobile devices, a new line within table cells. Use the ribbon icon (if enabled) or the "New line" command (Ctrl+P).');
+			.setDesc('Break inside a table cell for Mobile Devices. Use the ribbon icon (if enabled) or the "Line break" command (Ctrl+P).');
 	}
 }
