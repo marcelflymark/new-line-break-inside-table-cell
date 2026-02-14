@@ -116,6 +116,6 @@ class InsertNewlineSettingTab extends PluginSettingTab {
 
 		new Setting(containerEl)
 			.setName('About')
-			.setDesc('Table line break for Mobile Devices. Use the ribbon icon (if enabled) or the "Table line break" command (Ctrl+P).');
+			.setDesc('Insert line breaks into tables on mobile devices via shortcut or toolbar. Use the ribbon icon (if enabled) or the "Table line break" command (Ctrl+P).');
 	}
 }

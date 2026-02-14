@@ -3,7 +3,7 @@
 	"name": "Table Line Break Mobile",
 	"version": "1.0.1",
 	"minAppVersion": "0.15.0",
-        "description": "Command for mobile devices: table line break. This command can be used in a shortcut or toolbar.",
+        "description": "Insert line breaks into tables on mobile devices via shortcut or toolbar.",
 	"author": "marcelflymark",
 	"authorUrl": "https://github.com/marcelflymark",
 	"isDesktopOnly": false

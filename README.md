@@ -1,8 +1,8 @@
-# Table line break for Mobile Devices
+# Insert line breaks into tables on mobile devices via shortcut or toolbar.
 
 **Purpose**
 
-Add a line break inside a table cell on mobile devices.
+Insert line breaks into tables on mobile devices via a new command you can link to a shortcut or toolbar icon.
 
 When creating a table occasionally it is necessary to write one or more lines below the first one inside the same table cell. On devices with a hardware keyboard typing SHIFT+ENTER will wrap the line inside the same table cell.
 
