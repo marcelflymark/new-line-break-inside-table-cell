@@ -1,6 +1,6 @@
 {
   "name": "table-line-break",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Command for mobile devives: table line break. This command can be used in a shortcut or toolbar.",
   "main": "main.js",
   "scripts": {
