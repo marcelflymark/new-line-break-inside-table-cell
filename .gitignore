@@ -15,3 +15,4 @@ data.json
 files-containing-id.txt
 release.sh
 update-version-strings.sh
+test_it_builds.sh
