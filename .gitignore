@@ -13,3 +13,5 @@ obsidian_manifest.json
 obsidian_plugin.ts
 data.json
 files-containing-id.txt
+release.sh
+update-version-strings.sh
